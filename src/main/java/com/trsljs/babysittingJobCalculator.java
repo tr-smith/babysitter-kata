@@ -4,7 +4,7 @@ package com.trsljs;
  * Hello world!
  *
  */
-public class App 
+public class babysittingJobCalculator
 {
     public static void main( String[] args )
     {
