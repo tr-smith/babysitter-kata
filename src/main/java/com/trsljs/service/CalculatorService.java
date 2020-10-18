@@ -51,6 +51,9 @@ public class CalculatorService {
         if (adjustedEndTime.isBefore(adjustedMidnight)) {
             adjustedMidnight = adjustedEndTime;
         }
+        /*
+         * When the end time is before bedtime adjust bedtime so no hours are counted for bedtime.
+         */
         if (adjustedEndTime.isBefore(adjustedBedTime)) {
             adjustedBedTime = adjustedEndTime;
         }
