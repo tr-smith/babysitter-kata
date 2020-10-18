@@ -60,7 +60,7 @@ public class TimeUtilities {
         Vector<String> times = new Vector<>();
         times.add("");
         LocalTime startTime = START_TIME_MINIMUM;
-        for (int i = 0; i <= 7; i++) {
+        for (int i = 0; i <= 24 - START_TIME_MINIMUM.getHour(); i++) {
             times.add(startTime.format(TIME_FORMATTER));
             startTime = startTime.plusHours(1L);
         }
